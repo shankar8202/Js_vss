@@ -250,49 +250,31 @@
     }
   }
 ]
-// const myJSON = JSON.stringify(obj);
-// function okk(){
-// for(let i=0; i < obj; i++){
-//     const item=obj[i]["id"];
-//     let box = document.createElement("div");
-//     box.className="container"
-//     box.innerText=item;
-//     document.body.append(box)
-// }
 
-// }
-// okk()
+let df= document.createDocumentFragment()
 
-// function shivam(){
-  // let obj;
-let product= document.createDocumentFragment()
-
-  for(let i=0; i<object.length; i++){
+  for(let a=0; a<object.length; a++){
   let box = document.createElement("div");
   let box1 = document.createElement("div");
-  box1.innerText="User Name : "+ object[i].username;
+  box1.innerText="User Name : "+ object[a].username;
   let box2 = document.createElement("div");
-  box2.innerText="Name : "+ object[i].name;
+  box2.innerText="Name : "+ object[a].name;
   let box3 = document.createElement("div");
-  box3.innerText="Email : "+ object[i].email;
+  box3.innerText="Email : "+ object[a].email;
   let box4 = document.createElement("div");
-  box4.innerText="City : "+ object[i].address.city;
+  box4.innerText="City : "+ object[a].address.city;
   box.append(box1);
   box.append(box2);
   box.append(box3);
   box.append(box4);
   
   box.className="box"
-  product.append(box)
+  df.append(box)
 }
-document.body.append(product);
+document.body.append(df);
 
 // }
-// shivam()
 
-
-// console.log(obj)
-// console.log(myJSON)
 </script>
 <style>
   .box{ 
